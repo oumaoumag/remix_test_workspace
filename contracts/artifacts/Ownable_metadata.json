@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Voting_Sytem.sol": "Ownable"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Voting_Sytem.sol": {
+			"keccak256": "0x1d1d981318c5b91e2dc928fd24d423fdbabbb4a837d98f4916bd0db508b4eef8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b010dd32c116e3a8ef8234b485288dcedd3dc4763def2c0d5f0068441fb452c8",
+				"dweb:/ipfs/QmXUqMMB4D4Gbmyx2BBiCUuehYtrjNoQfXRfLiExZPRTYJ"
+			]
+		}
+	},
+	"version": 1
+}
