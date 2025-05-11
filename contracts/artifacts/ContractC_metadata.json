@@ -6,13 +6,31 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_contractLAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newValue",
+						"type": "uint256"
+					}
+				],
+				"name": "interactingWithL",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "contractB",
+				"name": "valueC",
 				"outputs": [
 					{
-						"internalType": "contract ContractB",
+						"internalType": "uint256",
 						"name": "",
-						"type": "address"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -22,18 +40,11 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_newValue",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "interactiveWith",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "valueA",
+				"name": "valueMap",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -58,7 +69,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/CallVsDelegateCall.sol": "contractA"
+			"contracts/CallVsDelegateCall.sol": "ContractC"
 		},
 		"evmVersion": "prague",
 		"libraries": {},

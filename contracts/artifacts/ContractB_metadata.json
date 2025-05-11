@@ -60,11 +60,11 @@
 	},
 	"sources": {
 		"contracts/CallVsDelegateCall.sol": {
-			"keccak256": "0xbc23414adae7214b2d3136e3046d0af4a64da05363669f72dcf90942764e8f37",
+			"keccak256": "0x1054138cf104e93b12d5df2309720def8555f240014eb89554d4e995863db438",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://aca81fe6eaa879e588b04f96d477206a079098c850eacbab1fa8fbecd7c516ef",
-				"dweb:/ipfs/QmXzXXJTmk4ZVqHKcspuMjR3e1p5a5mMU6LSqST31UFZXp"
+				"bzz-raw://79432b8c869f37e2461a0b246f478ded61ad7de1271ad38b6d2668cd2d8a4ec2",
+				"dweb:/ipfs/QmdHC4zbVRVY5VbF44Rq8HqyvxAu2xVcva3qovZXw9QECz"
 			]
 		}
 	},
