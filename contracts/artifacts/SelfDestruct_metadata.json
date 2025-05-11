@@ -1,0 +1,57 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_target",
+						"type": "address"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/SelfDestruct.sol": "SelfDestruct"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SelfDestruct.sol": {
+			"keccak256": "0xd1fa525b88d9eb8d3b6e5278b0ecad16a3fbd213811428f34c48a10685aa93e4",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://2d36a5b74d595e9059736afdf0c7413dc62b4644ad8df10ea1a85d99e8dde0c9",
+				"dweb:/ipfs/QmUw1euTqftk7mpGVzBKyofLGAevayATVKQ9tpr4PhRbAv"
+			]
+		}
+	},
+	"version": 1
+}
