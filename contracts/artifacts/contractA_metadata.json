@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "contractB",
+				"outputs": [
+					{
+						"internalType": "contract ContractB",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newValue",
+						"type": "uint256"
+					}
+				],
+				"name": "interactiveWith",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "valueA",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/CallVsDelegateCall.sol": "contractA"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/CallVsDelegateCall.sol": {
+			"keccak256": "0xbc23414adae7214b2d3136e3046d0af4a64da05363669f72dcf90942764e8f37",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://aca81fe6eaa879e588b04f96d477206a079098c850eacbab1fa8fbecd7c516ef",
+				"dweb:/ipfs/QmXzXXJTmk4ZVqHKcspuMjR3e1p5a5mMU6LSqST31UFZXp"
+			]
+		}
+	},
+	"version": 1
+}
