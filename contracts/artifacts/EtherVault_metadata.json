@@ -1,0 +1,529 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "status",
+						"type": "bool"
+					}
+				],
+				"name": "Whitelisted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdrawn",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "BIG_SPENDER_THRESHOLD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "BIG_SPENDER_WITHDRAWAL",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "LOCK_PERIOD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "MAGIC_WORD_HASH",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "MAGIC_WORD_WITHDRAWAL",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "WHITELISTED_WITHDRAWAL",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "WITHDRAWAL_DELAY",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "_users",
+						"type": "address[]"
+					}
+				],
+				"name": "addToWhitelist",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "canWithdraw",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "checkWhitelistStatus",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deploymentTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "etherSent",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "etherWithdrawn",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getVaultBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getWithdrawalLimit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_word",
+						"type": "string"
+					}
+				],
+				"name": "guessMagicWord",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "guessedMagicWord",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "isWhitelisted",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lastWithdrawalTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lastWithdrawer",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "_users",
+						"type": "address[]"
+					}
+				],
+				"name": "removeFromWhitelist",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"details": "A fun game contract for teaching Solidity concepts. Players must send Ether via selfdestruct or deposit, solve challenges to increase their withdrawal limits, and withdraw Ether after a lock period. The contract owner manages the whitelist. See instructions: `https://tinyurl.com/EtherVault`",
+			"events": {
+				"Withdrawn(address,uint256)": {
+					"details": "Event for transparency "
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"addToWhitelist(address[])": {
+					"details": "Add multiple addresses to the whitelist.",
+					"params": {
+						"_users": "Array of addresses to whitelist."
+					}
+				},
+				"canWithdraw(address)": {
+					"details": "Check if the user can withdraw at the current time.",
+					"params": {
+						"_user": "The address of the user."
+					},
+					"returns": {
+						"_0": "bool True if the user can withdraw, false otherwise."
+					}
+				},
+				"checkWhitelistStatus(address)": {
+					"details": "Check if an address is whitelisted.",
+					"params": {
+						"_user": "The address to check."
+					},
+					"returns": {
+						"_0": "bool True if the address is whitelisted, false otherwise."
+					}
+				},
+				"constructor": {
+					"details": "Constructor sets the deployer as the owner "
+				},
+				"deposit()": {
+					"details": "Deposit Ether to be recognized as a big spender. Only allows deposits of at least 0.01 ether."
+				},
+				"getVaultBalance()": {
+					"details": "Check the contract's current balance.",
+					"returns": {
+						"_0": "The balance of the contract."
+					}
+				},
+				"getWithdrawalLimit(address)": {
+					"details": "Determine the user's withdrawal limit based on their role.",
+					"params": {
+						"_user": "The address of the user."
+					},
+					"returns": {
+						"_0": "The withdrawal limit for the user."
+					}
+				},
+				"guessMagicWord(string)": {
+					"details": "Guess the magic word (\"Solidity\") to unlock higher withdrawals.",
+					"params": {
+						"_word": "The word to guess."
+					}
+				},
+				"removeFromWhitelist(address[])": {
+					"details": "Remove multiple addresses from the whitelist.",
+					"params": {
+						"_users": "Array of addresses to remove from the whitelist."
+					}
+				},
+				"withdraw()": {
+					"details": "Withdraw Ether based on the user's role after the lock period."
+				}
+			},
+			"stateVariables": {
+				"BIG_SPENDER_THRESHOLD": {
+					"details": "Big Spender threshold (0.03 ether) "
+				},
+				"MAGIC_WORD_HASH": {
+					"details": "Magic word hash "
+				},
+				"WHITELISTED_WITHDRAWAL": {
+					"details": "Withdrawal limits per role "
+				},
+				"deploymentTime": {
+					"details": "Deployment timestamp and lock period (2 days) "
+				},
+				"etherSent": {
+					"details": "Track Ether sent and withdrawn per address "
+				},
+				"isWhitelisted": {
+					"details": "Role tracking "
+				},
+				"lastWithdrawer": {
+					"details": "Last withdrawal tracking "
+				},
+				"owner": {
+					"details": "Contract owner (deployer) "
+				}
+			},
+			"title": "EtherVault",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/EtherVault.sol": "EtherVault"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/EtherVault.sol": {
+			"keccak256": "0xd08e54def41e8f7a11d02b0a358fb4878564647453b46b1ccfb5cac86f86ac9b",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://a67919d532c3eef15ebb0479143af093723c56faff906e9c70a69de3033faef7",
+				"dweb:/ipfs/QmSSqpGDaiEtH1jXWVXdLS7yHUBsDtdrH5z5ti2e53pEVp"
+			]
+		}
+	},
+	"version": 1
+}
